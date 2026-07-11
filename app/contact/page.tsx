@@ -149,6 +149,7 @@ export default function Page() {
                                 <option>Industrial IoT</option>
                                 <option>STEM Education</option>
                                 <option>Embedded Systems</option>
+                                <option>Lab Setups</option>
                                 <option>Talk Technology</option>
                             </select>
 

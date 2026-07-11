@@ -17,12 +17,7 @@ const categories = [
         className: "col-span-3 row-span-1",
     },
     {
-        title: "Embedded Systems",
-        image: "/ct-card-bg.png",
-        className: "col-span-4 row-span-1",
-    },
-    {
-        title: "Eelctronic Components",
+        title: "Electronic Components",
         image: "/ct-card-bg.png",
         className: "col-span-3 row-span-1",
     },
@@ -30,7 +25,12 @@ const categories = [
         title: "Drones",
         image: "/ct-card-bg.png",
         className: "col-span-3 row-span-1",
-    }
+    },
+    {
+        title: "Other Accessories",
+        image: "/ct-card-bg.png",
+        className: "col-span-4 row-span-1",
+    },
 ];
 
 export default function ProductCategorySection() {

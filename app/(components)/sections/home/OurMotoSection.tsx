@@ -1,9 +1,10 @@
 "use client";
 
-import { useRef } from "react";
+import {useRef} from "react";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useGSAP } from "@gsap/react";
+import {ScrollTrigger} from "gsap/ScrollTrigger";
+import {useGSAP} from "@gsap/react";
+
 gsap.registerPlugin(ScrollTrigger);
 
 
@@ -113,7 +114,8 @@ export default function OurMoto() {
 
                 {/* Left */}
                 <div className="flex justify-center">
-                    <div className="w-[360px] h-[360px] rounded-full bg-gray-200 overflow-hidden flex items-center justify-center">
+                    <div
+                        className="w-90 h-90 rounded-full bg-gray-200 overflow-hidden flex items-center justify-center">
                         <img
                             ref={image}
                             src={data[0].image}
@@ -124,7 +126,7 @@ export default function OurMoto() {
                 </div>
 
                 {/* Right */}
-                <div className="bg-gray-200 p-10 min-h-[350px] flex flex-col justify-start">
+                <div className="bg-gray-200 p-10 min-h-87.5 flex flex-col justify-start">
                     <h3
                         ref={title}
                         className="text-3xl font-semibold mb-6"
