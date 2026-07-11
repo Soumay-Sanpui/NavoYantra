@@ -1,13 +1,14 @@
 "use client";
 
-import { Poppins } from "next/font/google";
-import { useGSAP } from "@gsap/react";
+import {Poppins} from "next/font/google";
+import {useGSAP} from "@gsap/react";
 import gsap from "gsap";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
-import { HiOutlineMenuAlt3, HiOutlineX } from "react-icons/hi";
-import { Heart, ShoppingCart, X } from "react-feather";
+import {useEffect, useRef, useState} from "react";
+import {HiOutlineMenuAlt3, HiOutlineX} from "react-icons/hi";
+import {Heart, ShoppingCart, X} from "react-feather";
+import {usePathname} from "next/navigation";
 
 const poppins = Poppins({
     subsets: ["latin"],
@@ -17,7 +18,6 @@ const poppins = Poppins({
 export default function Header() {
 
     const headerOptions = [
-        "Home",
         "Store",
         "Courses",
         "Lab Setup",
@@ -42,6 +42,7 @@ export default function Header() {
     const [wishlistItems, setWishlistItems] = useState<any[]>([]);
     const [cartCount, setCartCount] = useState<number>(0);
 
+    const pathname = usePathname();
     useEffect(() => {
         const updateWishlist = () => {
             const items = localStorage.getItem("wishlist");
@@ -195,14 +196,15 @@ export default function Header() {
                 className={`${poppins.className} z-50 sticky top-0 w-svw bg-white/20 backdrop-blur-2xl flex items-center justify-between px-5 py-4 lg:px-10`}
             >
 
-                <Image
-                    src="/logo.png"
-                    width={220}
-                    height={70}
-                    alt="Logo"
-                    priority
+                <Link href="/">
+                    <Image
+                        src="/logo.png"
+                        width={220}
+                        height={70}
+                        alt="Logo"
+                        priority
                     className="logo-img w-36 lg:w-48"
-                />
+                    /></Link>
 
                 <nav className="hidden md:block">
 
@@ -220,7 +222,7 @@ export default function Header() {
 
                                 <Link
                                     href={option === "Home" ? "/" : `/${option.toLowerCase().replace(/\s+/g, "-")}`}
-                                    className="text-wrapper flex flex-col"
+                                    className={`text-wrapper flex flex-col ${pathname === `/${option.toLowerCase().replace(/\s+/g, "-")}` ? "text-blue-500 underline font-semibold" : ""}`}
                                 >
 
                                     <span>{option}</span>
