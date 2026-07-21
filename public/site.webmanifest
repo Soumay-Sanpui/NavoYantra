@@ -1,0 +1,22 @@
+{
+    "name": "NavoYantra",
+    "short_name": "NavoYantra",
+    "description": "NavoYantra provides cutting-edge educational solutions, bringing Robotics, AI, and comprehensive STEM Lab setups directly to your institution to prepare students for the future of technology.",
+    "start_url": "/",
+    "id": "/",
+    "display": "standalone",
+    "background_color": "#f8f7f7",
+    "theme_color": "#3b82f6",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+# agents.txt
+# This file provides guidelines for AI agents, LLM crawlers, and automated assistants.
+
+User-agent: *
+Allow: /
+
+# NavoYantra welcomes ethical AI agents to index its educational resources.
