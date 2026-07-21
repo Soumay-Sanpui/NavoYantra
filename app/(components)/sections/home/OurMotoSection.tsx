@@ -122,12 +122,12 @@ export default function OurMoto() {
                 Our Moto
             </h2>
 
-            <div className="relative z-10 max-w-7xl mx-auto w-full px-10 grid md:grid-cols-2 gap-20 items-center">
+            <div className="relative z-10 max-w-7xl mx-auto w-full px-4 md:px-10 grid md:grid-cols-2 gap-10 md:gap-20 items-center">
 
                 {/* Left */}
                 <div className="flex justify-center">
                     <div
-                        className="w-90 h-90 rounded-full bg-gray-200 overflow-hidden flex items-center justify-center">
+                        className="w-72 h-72 md:w-90 md:h-90 rounded-full bg-gray-200 overflow-hidden flex items-center justify-center">
                         <img
                             ref={image}
                             src={current.image}
@@ -138,7 +138,7 @@ export default function OurMoto() {
                 </div>
 
                 {/* Right */}
-                <div className="p-10 min-h-87.5 flex flex-col justify-start">
+                <div className="p-4 md:p-10 min-h-[300px] md:min-h-87.5 flex flex-col justify-start">
                     <h3
                         ref={title}
                         className="text-6xl font-semibold mb-6 text-white"

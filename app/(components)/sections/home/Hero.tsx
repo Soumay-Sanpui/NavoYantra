@@ -1,5 +1,7 @@
 "use client";
 
+import { PhoneCall } from "react-feather";
+
 function Hero() {
     return (
         <section className="relative w-full bg-background overflow-hidden">
@@ -32,8 +34,8 @@ function Hero() {
                         <button className="bg-accent hover:opacity-90 transition-opacity text-white text-sm font-bold uppercase py-4 px-8">
                             Get Started
                         </button>
-                        <div className="text-foreground font-bold text-lg">
-                            Call: <span className="opacity-80">+91 8796599974</span>
+                        <div className="text-foreground font-bold text-lg flex gap-2 items-center">
+                            <PhoneCall /> <span className="opacity-80">+91 8796599974</span>
                         </div>
                     </div>
                 </div>
@@ -56,7 +58,7 @@ function Hero() {
 
             {/* Rating below the white box */}
             <div className="max-w-7xl mx-auto px-4 pt-6 pb-12 flex items-center gap-3">
-                <div className="w-[60%] flex items-center gap-3 pl-4 md:pl-8">
+                <div className="w-full md:w-[60%] flex items-center gap-3 pl-4 md:pl-8">
                     <div className="flex text-yellow-500 text-lg">
                         ★★★★★
                     </div>

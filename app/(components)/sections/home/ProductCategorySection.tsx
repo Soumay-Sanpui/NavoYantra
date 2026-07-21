@@ -4,32 +4,32 @@ const categories = [
     {
         title: "Robotics Kits",
         image: "/product-category/robotic.jpeg",
-        className: "col-span-3 row-span-1",
+        className: "col-span-1 md:col-span-3 row-span-1",
     },
     {
         title: "AI & Smart Learning Kits",
         image: "/product-category/ai.png",
-        className: "col-span-4 row-span-1",
+        className: "col-span-1 md:col-span-4 row-span-1",
     },
     {
         title: "IoT Developement Kits",
         image: "/product-category/iot.png",
-        className: "col-span-3 row-span-1",
+        className: "col-span-1 md:col-span-3 row-span-1",
     },
     {
         title: "Electronic Components",
         image: "/product-category/ec.png",
-        className: "col-span-3 row-span-1",
+        className: "col-span-1 md:col-span-3 row-span-1",
     },
     {
         title: "Drones",
         image: "/product-category/drone.png",
-        className: "col-span-3 row-span-1",
+        className: "col-span-1 md:col-span-3 row-span-1",
     },
     {
         title: "Other Accessories",
         image: "/product-category/acces.png",
-        className: "col-span-4 row-span-1",
+        className: "col-span-1 md:col-span-4 row-span-1",
     },
 ];
 
@@ -42,7 +42,7 @@ export default function ProductCategorySection() {
                 </h2>
             </div>
 
-            <div className="grid grid-cols-10 gap-4 auto-rows-55">
+            <div className="grid grid-cols-1 md:grid-cols-10 gap-4 auto-rows-[250px] md:auto-rows-55">
 
                 {categories.map((item, index) => (
                     <div

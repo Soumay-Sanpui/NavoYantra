@@ -45,7 +45,7 @@ export default function WhatWeOfferSection() {
                 <p className="mt-3 text-gray-500">Explore our STEM Kits</p>
             </div>
 
-            <div className="flex gap-4 h-137.5">
+            <div className="flex flex-col md:flex-row gap-4 h-[70vh] md:h-137.5">
                 {categories.map((category, index) => {
                     const isActive = active === index;
                     return (
@@ -71,8 +71,7 @@ export default function WhatWeOfferSection() {
                                 <div className="relative h-full flex flex-col items-center justify-start py-8 text-white">
                                     <span className="text-lg">0{index + 1}</span>
                                     <h3
-                                        className="mt-16 text-2xl whitespace-nowrap"
-                                        style={{ writingMode: "vertical-rl", }}
+                                        className="mt-4 md:mt-16 text-xl md:text-2xl whitespace-nowrap [writing-mode:horizontal-tb] md:[writing-mode:vertical-rl]"
                                     >
                                         {category.title}
                                     </h3>
