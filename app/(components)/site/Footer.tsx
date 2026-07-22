@@ -44,7 +44,15 @@ export default function Footer() {
                             and Embedded Systems with practical STEM learning kits.</p>
                         <div>
                             <p className="mb-3 text-xs uppercase tracking-[0.35em] text-neutral-500">Office</p>
-                            <p className="text-neutral-700 leading-7">New Delhi, India</p>
+                            <p className="mt-4 text-gray-500 leading-7">
+                                1/10726-A KH No. 1622/62,
+                                <br />
+                                Gali No. 2, Subhash Park,
+                                <br />
+                                Naveen Shahdara,
+                                <br />
+                                Delhi - 110032
+                            </p>
                         </div>
                     </div>
 

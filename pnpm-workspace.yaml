@@ -1,8 +1,8 @@
 allowBuilds:
-  nocodb-sdk: set this to true or false
+  nocodb-sdk: true
   sharp: true
   unrs-resolver: true
-  vue-demi: set this to true or false
+  vue-demi: true
 ignoredBuiltDependencies:
   - sharp
   - unrs-resolver

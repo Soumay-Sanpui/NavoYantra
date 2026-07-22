@@ -1,6 +1,6 @@
 "use client";
 
-import {Mail, MapPin, Phone, Send} from "react-feather";
+import {ArrowRight, CheckCircle, Cpu, Mail, MapPin, Phone, Settings, Zap} from "react-feather";
 
 export default function Page() {
     return (
@@ -8,12 +8,10 @@ export default function Page() {
             <div className="max-w-7xl mx-auto px-6">
 
                 {/* Header */}
-
                 <div className="text-center mb-20">
-
-          <span className="uppercase tracking-[0.25em] text-blue-500 text-sm font-semibold">
-            Contact
-          </span>
+                    <span className="uppercase tracking-[0.25em] text-blue-500 text-sm font-semibold">
+                        Contact
+                    </span>
 
                     <h2 className="text-5xl font-bold mt-4">
                         Let's Build Something Amazing
@@ -24,15 +22,13 @@ export default function Page() {
                         Drone Technology or custom hardware development,
                         our team is ready to help.
                     </p>
-
                 </div>
 
                 {/* Contact Cards */}
-
                 <div className="grid md:grid-cols-3 gap-8 mb-24">
 
+                    {/* Address */}
                     <div className="rounded-2xl border border-gray-200 bg-white p-8 text-center hover:shadow-xl transition">
-
                         <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-blue-100">
                             <MapPin className="text-blue-500" size={28} />
                         </div>
@@ -42,17 +38,18 @@ export default function Page() {
                         </h3>
 
                         <p className="mt-4 text-gray-500 leading-7">
-                            C-403, GGSIPU EDC,
+                            1/10726-A KH No. 1622/62,
                             <br />
-                            Shahdara,
+                            Gali No. 2, Subhash Park,
                             <br />
-                            Delhi - 110092
+                            Naveen Shahdara,
+                            <br />
+                            Delhi - 110032
                         </p>
-
                     </div>
 
+                    {/* Email */}
                     <div className="rounded-2xl border border-gray-200 bg-white p-8 text-center hover:shadow-xl transition">
-
                         <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-blue-100">
                             <Mail className="text-blue-500" size={28} />
                         </div>
@@ -66,11 +63,10 @@ export default function Page() {
                             <br />
                             info@navoyantra.com
                         </p>
-
                     </div>
 
+                    {/* Phone */}
                     <div className="rounded-2xl border border-gray-200 bg-white p-8 text-center hover:shadow-xl transition">
-
                         <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-blue-100">
                             <Phone className="text-blue-500" size={28} />
                         </div>
@@ -80,94 +76,152 @@ export default function Page() {
                         </h3>
 
                         <p className="mt-4 text-gray-500 leading-7">
-                            +91 1234567890
-                            <br />
-                            +91 1234567890
+                            +91 87965999674
                         </p>
-
                     </div>
 
                 </div>
 
                 {/* Bottom Section */}
-
-                <div className="grid lg:grid-cols-2 gap-14 items-start">
+                <div className="grid lg:grid-cols-2 gap-14 items-stretch">
 
                     {/* Map */}
-
-                    <div className="overflow-hidden rounded-3xl shadow-xl border border-gray-200 h-155">
-
+                    <div className="overflow-hidden rounded-3xl shadow-xl border border-gray-200 min-h-[550px]">
                         <iframe
-                            title="Google Maps"
-                            src="https://maps.google.com/maps?q=ggsip&t=&z=12&ie=UTF8&iwloc=&output=embed"
+                            title="Navoyantra Location"
+                            src="https://maps.google.com/maps?q=Subhash%20Park%2C%20Naveen%20Shahdara%2C%20Delhi%20110032&t=&z=16&ie=UTF8&iwloc=&output=embed"
                             className="w-full h-full border-0"
                             loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
                         />
-
                     </div>
 
-                    {/* Form */}
+                    {/* Contact Content */}
+                    <div className="flex flex-col justify-center lg:pl-6">
 
-                    <div>
-
-            <span className="uppercase tracking-[0.2em] text-blue-500 text-sm font-semibold">
-              Get In Touch
-            </span>
+                        <span className="uppercase tracking-[0.2em] text-blue-500 text-sm font-semibold">
+                            Get In Touch
+                        </span>
 
                         <h2 className="text-5xl font-bold mt-3 leading-tight">
-                            Let's Talk About
+                            Let's Talk
                             <br />
-                            Your Project
+                            Technology
                         </h2>
 
                         <p className="text-gray-500 mt-6 leading-8">
-                            Fill out the form below and our engineering team will
-                            get back to you within 24 hours.
+                            Have an idea or looking for a technology partner?
+                            Connect with our engineering team and let's turn your
+                            ideas into innovative solutions.
                         </p>
 
-                        <form className="space-y-5 mt-10">
+                        {/* Pointers */}
+                        <div className="mt-10 space-y-6">
 
-                            <input
-                                placeholder="Your Name"
-                                className="w-full  border border-gray-300 px-5 py-4 outline-none focus:border-blue-500"
-                            />
+                            {/* Engineering Expertise */}
+                            <div className="flex items-start gap-4">
+                                <div className="shrink-0 flex h-12 w-12 items-center justify-center rounded-xl bg-blue-100">
+                                    <Cpu
+                                        className="text-blue-500"
+                                        size={22}
+                                    />
+                                </div>
 
-                            <input
-                                placeholder="Email Address"
-                                type="email"
-                                className="w-full  border border-gray-300 px-5 py-4 outline-none focus:border-blue-500"
-                            />
+                                <div>
+                                    <h3 className="font-semibold text-lg">
+                                        Engineering Expertise
+                                    </h3>
 
-                            <input
-                                placeholder="Phone Number"
-                                className="w-full  border border-gray-300 px-5 py-4 outline-none focus:border-blue-500"
-                            />
+                                    <p className="text-gray-500 mt-1 leading-7">
+                                        Get expert guidance for IoT, Embedded Systems,
+                                        Drone Technology and custom hardware solutions.
+                                    </p>
+                                </div>
+                            </div>
 
-                            <select className="w-full  border border-gray-300 px-5 py-4 outline-none focus:border-blue-500">
-                                <option>Select Service</option>
-                                <option>Drone Technology</option>
-                                <option>Industrial IoT</option>
-                                <option>STEM Education</option>
-                                <option>Embedded Systems</option>
-                                <option>Lab Setups</option>
-                                <option>Talk Technology</option>
-                            </select>
+                            {/* Custom Solutions */}
+                            <div className="flex items-start gap-4">
+                                <div className="shrink-0 flex h-12 w-12 items-center justify-center rounded-xl bg-blue-100">
+                                    <Settings
+                                        className="text-blue-500"
+                                        size={22}
+                                    />
+                                </div>
 
-                            <textarea
-                                rows={6}
-                                placeholder="Tell us about your project..."
-                                className="w-full  border border-gray-300 px-5 py-4 outline-none focus:border-blue-500 resize-none"
-                            />
+                                <div>
+                                    <h3 className="font-semibold text-lg">
+                                        Custom Solutions
+                                    </h3>
 
-                            <button
-                                className="cursor-pointer inline-flex items-center gap-3  bg-blue-500 px-8 py-4 font-semibold text-white transition hover:bg-blue-600"
+                                    <p className="text-gray-500 mt-1 leading-7">
+                                        We design and develop technology solutions
+                                        tailored specifically to your project requirements.
+                                    </p>
+                                </div>
+                            </div>
+
+                            {/* Fast Response */}
+                            <div className="flex items-start gap-4">
+                                <div className="shrink-0 flex h-12 w-12 items-center justify-center rounded-xl bg-blue-100">
+                                    <Zap
+                                        className="text-blue-500"
+                                        size={22}
+                                    />
+                                </div>
+
+                                <div>
+                                    <h3 className="font-semibold text-lg">
+                                        Fast Response
+                                    </h3>
+
+                                    <p className="text-gray-500 mt-1 leading-7">
+                                        Reach out to our team and we'll get back to you
+                                        as soon as possible to discuss your project.
+                                    </p>
+                                </div>
+                            </div>
+
+                            {/* End-to-End Support */}
+                            <div className="flex items-start gap-4">
+                                <div className="shrink-0 flex h-12 w-12 items-center justify-center rounded-xl bg-blue-100">
+                                    <CheckCircle
+                                        className="text-blue-500"
+                                        size={22}
+                                    />
+                                </div>
+
+                                <div>
+                                    <h3 className="font-semibold text-lg">
+                                        End-to-End Support
+                                    </h3>
+
+                                    <p className="text-gray-500 mt-1 leading-7">
+                                        From initial concept and prototyping to development
+                                        and deployment, we're here to support you.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        {/* Contact Button */}
+                        <div className="mt-10">
+                            <a
+                                href="mailto:contact@navoyantra.com?subject=Project%20Inquiry"
+                                className="inline-flex items-center gap-3 bg-blue-500 px-8 py-4 font-semibold text-white transition hover:bg-blue-600"
                             >
-                                Send Message
+                                <Mail size={20} />
 
-                                <Send size={18} />
-                            </button>
+                                Contact Us
 
-                        </form>
+                                <ArrowRight size={18} />
+                            </a>
+                        </div>
+
+                        {/* Email Text */}
+                        <p className="mt-4 text-sm text-gray-400">
+                            Or email us directly at contact@navoyantra.com
+                        </p>
 
                     </div>
 
