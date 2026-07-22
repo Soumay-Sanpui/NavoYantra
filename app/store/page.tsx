@@ -17,99 +17,19 @@ import {
 const products = [
     {
         id: 1,
-        name: "Robo-Yantra Starter Kit",
-        price: 4999,
+        name: "RoboLearner Kit",
+        price: 2800,
         category: "Robotics Kits",
         description: "An all-in-one introductory kit to build your first autonomous obstacle-avoiding robot. Includes chassis, micro-controller, sensors, and full instruction booklet.",
         features: [
             "Arduino-compatible controller",
             "Ultrasonic & IR line sensors",
             "Dual high-torque DC motors",
-            "Comprehensive video guide"
+            "Comprehensive video tutorials and documentation"
         ],
         image: "/ct-card-bg.png",
         inStock: true,
         popularity: 95
-    },
-    {
-        id: 2,
-        name: "AI Edge Camera Module",
-        price: 6499,
-        category: "AI & Smart Learning",
-        description: "Add computer vision to your robotics projects. Features on-board neural processing for object detection, facial recognition, and line tracing.",
-        features: [
-            "OV5640 5MP camera sensor",
-            "K210 Dual-core RISC-V processor",
-            "Supports TensorFlow Lite models",
-            "I2C and UART communications"
-        ],
-        image: "/ct-card-bg.png",
-        inStock: true,
-        popularity: 92
-    },
-    {
-        id: 3,
-        name: "IoT Weather Station Lab",
-        price: 5799,
-        category: "IoT Development",
-        description: "Learn IoT by building a real-time weather monitoring station. Upload temperature, humidity, pressure, and rain data directly to a cloud dashboard.",
-        features: [
-            "ESP32 Wi-Fi + Bluetooth board",
-            "DHT22, BMP280, & Rain sensors",
-            "OLED display integration",
-            "ThingsSpeak & Blynk cloud setup"
-        ],
-        image: "/ct-card-bg.png",
-        inStock: true,
-        popularity: 88
-    },
-    {
-        id: 4,
-        name: "Navo-Core MCU Board V2",
-        price: 1299,
-        category: "Embedded Systems",
-        description: "Our signature high-speed development board featuring enhanced power management, USB-C programming, and double the flash memory of standard boards.",
-        features: [
-            "Atmega328P custom-tuned MCU",
-            "USB-C interface & CH340 driver",
-            "Integrated 5V and 3.3V regulators",
-            "Gold-plated headers for durability"
-        ],
-        image: "/ct-card-bg.png",
-        inStock: true,
-        popularity: 90
-    },
-    {
-        id: 5,
-        name: "Carbon-Quadcopter Frame Kit",
-        price: 3999,
-        category: "Drones",
-        description: "Lightweight and crash-resistant carbon fiber frame designed for quadcopter builds. Fits 5-inch props and features built-in power distribution board.",
-        features: [
-            "3k Matte pure carbon fiber",
-            "4mm thick arm plates",
-            "Integrated 5V/12V dual BEC PDB",
-            "Only 110g frame weight"
-        ],
-        image: "/ct-card-bg.png",
-        inStock: false,
-        popularity: 80
-    },
-    {
-        id: 6,
-        name: "Ultimate IoT Sensor Kit (37-in-1)",
-        price: 2499,
-        category: "Electronic Components",
-        description: "A complete bundle of 37 different sensor and actuator modules to interface with Arduino, Raspberry Pi, or ESP32. Includes storage case.",
-        features: [
-            "37 modular sensors (temp, gas, gyro, etc)",
-            "Universal 3-pin headers",
-            "Includes premium breadboard & wires",
-            "Online wiki code repository"
-        ],
-        image: "/ct-card-bg.png",
-        inStock: true,
-        popularity: 94
     }
 ];
 

@@ -17,7 +17,7 @@ const poppins = Poppins({
 export default function Header() {
     const headerOptions = [
         "Store",
-        "Courses",
+        //"Courses",
         "Lab Setup",
         "About",
         "Contact",
@@ -202,7 +202,7 @@ export default function Header() {
 
                 {wishlistOpen && (
                     <div className="absolute right-5 lg:right-10 top-full mt-2 w-80 rounded-2xl border border-gray-200 bg-white shadow-2xl overflow-hidden z-[999] wishlist-container">
-                        <div className="flex items-center justify-between border-b px-5 py-4">
+                        <div className="flex items-center justify-between px-5 py-4">
                             <h3 className="font-semibold text-lg">My Wishlist</h3>
                             <button
                                 onClick={() => setWishlistOpen(false)}
@@ -216,15 +216,6 @@ export default function Header() {
                             <div className="flex flex-col items-center justify-center py-12 px-6">
                                 <Heart size={42} className="text-gray-300" />
                                 <h4 className="mt-5 text-lg font-semibold">No Wishlist Items</h4>
-                                <p className="mt-2 text-center text-sm text-gray-500">
-                                    Products that you add to your wishlist will appear here.
-                                </p>
-                                <button
-                                    onClick={() => setWishlistOpen(false)}
-                                    className="mt-6 rounded-lg bg-blue-500 px-5 py-2 text-white hover:bg-blue-600 transition"
-                                >
-                                    Continue Shopping
-                                </button>
                             </div>
                         ) : (
                             <div className="max-h-96 overflow-y-auto">
